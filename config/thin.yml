@@ -1,7 +1,9 @@
 ---
 environment: production
+# Specify either port or socket 
 port: 3000
-servers: 1
+#socket: tmp/sockets/thin.sock
+servers: 3
 tag: sinatra-websocket-rack-example
 pid: tmp/pids/thin.pid
 log: log/thin.log
