@@ -97,6 +97,8 @@ YUI().use('node', 'event', 'anim', function (Y) {
 				// Send the message to the server over the websocket.
 				ws.send(message);
 
+				// Clear the input field.
+				sendInput.set('value', '');
 			});
 
 
