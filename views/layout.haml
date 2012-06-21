@@ -1,0 +1,31 @@
+!!! 5
+%html
+	%head
+
+		%title= @pageTitle
+
+		%meta{'http-equiv' => "Content-Type", :content => "text/html; charset=UTF-8"}
+
+		%script{:type => "text/javascript", :src  => "http://yui.yahooapis.com/3.5.1/build/yui/yui-min.js"}
+
+		- if @webSocketHandler
+			%script{:type => "text/javascript", :src  => "/scripts/websockets/#{@webSocketHandler}.js"}
+
+		%link{:rel => "stylesheet", :media => "screen", :type => "text/css", :href => "/stylesheets/layout.css"}
+		%link{:rel => "stylesheet", :media => "screen", :type => "text/css", :href => "http://fonts.googleapis.com/css?family=Calligraffitti"}
+		-if @stylesheet
+			%link{:rel => "stylesheet", :media => "screen", :type => "text/css", :href => "/stylesheets/#{@stylesheet}.css"}
+
+	%body
+
+		#container
+
+			#header
+				%h2 Clean and simple Sinatra with Rack-WebSockets.
+
+			#content
+				=yield
+
+			#footer
+				%p 
+					%a{:href => "https://github.com/AustenConrad/sinatra-websocket-rack-example"} https://github.com/AustenConrad/sinatra-websocket-rack-example

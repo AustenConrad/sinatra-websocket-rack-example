@@ -1,0 +1,51 @@
+body
+{
+	background-color: #F2594B;
+	color: #888888;
+}
+
+a
+{
+	text-decoration: none;
+	color: #676767;
+}
+
+a:visited
+{
+	color: #676767;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+#container 
+{
+	margin: 0 auto;
+	width: 600px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px #CD2C24;
+	background-color: #F2E1AC;
+	padding: 10px;
+	position: relative;
+	top: 50px;
+}
+
+#container #header
+{
+	text-align: center;
+	font-family: 'Calligraffitti', cursive;
+	font-size: 17px;
+}
+
+#container #footer
+{
+	text-align: center;
+	font-family: 'Calligraffitti', cursive;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding-top: 10px;
+}
+

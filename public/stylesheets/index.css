@@ -1,0 +1,50 @@
+span.server
+{
+	color: #63A69F;
+}
+
+span.client
+{
+	color: #F2836B;
+}
+
+#messages
+{
+	background-color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 20px;	
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+
+#sendForm
+{
+	margin: 0 auto;
+	width: 400px;
+	height: 0px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+#sendButton
+{
+	height: 25px;
+	background: #CD2C24;
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+#instructions
+{
+	height: 18px;
+	width: 325px;
+	font-size: 16px;
+	font-family: 'Calligraffitti', cursive;
+	letter-spacing: 2px;
+	font-weight: bold;
+	padding-top: 3px;
+}

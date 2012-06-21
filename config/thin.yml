@@ -1,0 +1,8 @@
+---
+environment: production
+port: 3000
+servers: 1
+tag: sinatra-websocket-rack-example
+pid: tmp/pids/thin.pid
+log: log/thin.log
+daemonize: true
