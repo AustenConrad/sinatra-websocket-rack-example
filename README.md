@@ -5,6 +5,10 @@ Clean example of using websocket-rack with Sinatra. The websocket endpoint is mo
 and sinatra app to run on the same port. The example includes detection for for the websocket link going down with automatic reconnection. To see it 
 in action stop/start thin and see what the client does in the browser.
 
+Depends on:
+=====
+ruby, rack, thin, sinatra, websocket-rack, haml
+
 To run the example (NOTE: must be in production mode):
 =====
 ```bash
@@ -30,7 +34,3 @@ To stop:
 ```bash
 thin stop -C config/thin.yml
 ```
-
-Depends on:
-====
-ruby, rack, thin, sinatra, websocket-rack, haml
