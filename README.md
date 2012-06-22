@@ -3,7 +3,7 @@ sinatra-websocket-rack-example
 
 Clean example of using websocket-rack with Sinatra. The websocket endpoint is mounted via a route (see config.ru). This allows for the web socket app 
 and sinatra app to run on the same port. The example includes detection for for the websocket link going down with automatic reconnection. To see it 
-in action stop/start thin and see what the client does in the browser.
+in action stop/start thin and see what the client does in the browser. I also made a quick screencast: http://youtu.be/XVtEyilJD8M
 
 Depends on:
 =====
