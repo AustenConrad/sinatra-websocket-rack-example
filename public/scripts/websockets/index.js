@@ -23,9 +23,7 @@ YUI().use('node', 'event', 'anim', function (Y) {
 		// Announce that the browser does support web sockets.
 		messagebox.prepend('Websocket is supported by this browser!<br />', top);
 		
-		// Initial connection attempt to the web socket app.
-		connect();
-
+		// Connection Logic.
 		function connect() {
 			// Create websocket connection by connecting to the mount point we specified in config.ru
 			var ws = new WebSocket("ws://127.0.0.1:3000/example");
@@ -103,6 +101,9 @@ YUI().use('node', 'event', 'anim', function (Y) {
 
 
 		}
+
+		// Initial connection attempt to the web socket app.
+		connect();
 
 	}
 	else
