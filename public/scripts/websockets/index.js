@@ -1,3 +1,7 @@
+var websocket_server_ip_address = "127.0.0.1";
+var websocket_server_port_number = "3000";
+var websocket_mount_point = "example";
+
 YUI().use('node', 'event', 'anim', function (Y) {
 
 	// Select the page element to insert messages into.
@@ -26,7 +30,7 @@ YUI().use('node', 'event', 'anim', function (Y) {
 		// Connection Logic.
 		function connect() {
 			// Create websocket connection by connecting to the mount point we specified in config.ru
-			var ws = new WebSocket("ws://127.0.0.1:3000/example");
+			var ws = new WebSocket("ws://" + websocket_server_ip_address + ":" + websocket_server_port_number + "/" + websocket_mount_point);
 
 			// On web socket established.
 			ws.onopen = function() {

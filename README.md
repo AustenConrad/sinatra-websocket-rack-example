@@ -16,6 +16,7 @@ git clone https://github.com/AustenConrad/sinatra-websocket-rack-example.git
 cd sinatra-websocket-rack-example
 thin start -e production
 ```
+(NOTE: If you are not running it on localhost or change the port number or mount point in config.ru then make certain to change the settings at the top of the 'public/scripts/websockets/index.js' file to match.)
 
 To run the example as a daemon:
 =====
