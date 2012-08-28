@@ -24,6 +24,15 @@ class WebSocketApp < Rack::WebSocket::Application
 		# Send a welcome message to the user over websockets.
 		send_data "<span class='server'> @client Hello Client! </span>"
 		puts "Sent message: @client Hello Client!"
+
+                # Uncomment below for an example of routinely broadcasting to the client.
+                #EM.next_tick do
+		#	# The "1" here specifies interval in seconds.
+                #        EventMachine::PeriodicTimer.new(1) do
+                #                send_data "<span class='server'> @client tick tock"
+                #        end
+                #end
+		
 	end
 
 	def on_close(env)
