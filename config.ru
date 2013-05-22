@@ -29,7 +29,7 @@ class WebSocketApp < Rack::WebSocket::Application
                 #EM.next_tick do
 		#	# The "1" here specifies interval in seconds.
                 #        EventMachine::PeriodicTimer.new(1) do
-                #                send_data "<span class='server'> @client tick tock"
+                #                send_data "<span class='server'> @client tick tock </span>"
                 #        end
                 #end
 		
